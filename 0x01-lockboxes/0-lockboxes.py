@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """unlocks alot"""
 
+
 def canUnlockAll(boxes):
     """unlock boxes"""
     x = True
@@ -23,11 +24,10 @@ def canUnlockAll(boxes):
             x = False
         else:
             unlist.append(temp)
-    flist = sum(unlist,[])
+    flist = sum(unlist, [])
     y = True
-    for i in range(1,len(boxes)):
+    for i in range(1, len(boxes)):
         if i not in flist:
-                y = False
-                break
+            y = False
+            break
     return(y)
-
